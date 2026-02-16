@@ -36,7 +36,7 @@
       "cafedostazas": {
         "title": "Cafe Dos Tazas",
         "description": "A modern landing page for a coffee brand. Features a product carousel, contact integration, and a clean, responsive design.",
-        "tech": ["React", "Vite", "Tailwind CSS"]
+        "tech": ["Next.js", "Vite", "Tailwind CSS"]
       },
       "samanthazul": {
         "title": "Samantha Zul",

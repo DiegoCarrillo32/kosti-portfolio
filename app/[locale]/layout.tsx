@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://diego-carrillo.com",
+    url: "https://diegocarrillo.com",
     title: "Diego Carrillo | Software Developer Portfolio",
     description:
       "Explore the portfolio of Diego Carrillo Arroyo, a Full Stack Developer from Costa Rica specializing in modern web technologies like Next.js and React.",

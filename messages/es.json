@@ -36,17 +36,17 @@
       "cafedostazas": {
         "title": "Café Dos Tazas",
         "description": "Una landing page moderna para una marca de café. Cuenta con carrusel de productos, integración de contacto y un diseño limpio y responsivo.",
-        "tech": ["React", "Vite", "Tailwind CSS"]
+        "tech": ["Next.js", "Vite", "Tailwind CSS"]
       },
       "samanthazul": {
         "title": "Samantha Zul",
         "description": "Sitio web portafolio para Samantha Zul, mostrando su trabajo y experiencia profesional.",
-        "tech": ["Diseño Web", "UI Responsiva"]
+        "tech": ["Astro", "React"]
       },
       "volcanicvillas": {
         "title": "Arenal Volcanic Villas",
         "description": "Sitio web turístico para Arenal Volcanic Villas, con detalles de alojamiento e información de reservas.",
-        "tech": ["Turismo", "Integración de Reservas"]
+        "tech": ["React", "Tailwind CSS"]
       }
     }
   },
