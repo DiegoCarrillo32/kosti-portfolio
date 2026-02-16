@@ -24,7 +24,7 @@ const MotionLinkBox = motion(LinkBox);
 const PROJECTS = [
   {
     id: "portfolio",
-    url: "https://diego-carrillo.com",
+    url: "https://diegocarrillo.com",
   },
   {
     id: "cafedostazas",
