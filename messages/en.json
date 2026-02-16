@@ -27,6 +27,10 @@
   "Projects": {
     "title": "Projects",
     "visit": "Visit Project",
+    "methods": {
+      "ai": "AI Driven",
+      "organic": "Organic"
+    },
     "list": {
       "portfolio": {
         "title": "My Portfolio",
@@ -36,7 +40,7 @@
       "cafedostazas": {
         "title": "Cafe Dos Tazas",
         "description": "A modern landing page for a coffee brand. Features a product carousel, contact integration, and a clean, responsive design.",
-        "tech": ["Next.js", "Vite", "Tailwind CSS"]
+        "tech": ["Next.js", "Vite", "Tailwind CSS", "Sanity CRM"]
       },
       "samanthazul": {
         "title": "Samantha Zul",

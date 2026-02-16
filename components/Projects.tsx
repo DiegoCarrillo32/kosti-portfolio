@@ -25,18 +25,22 @@ const PROJECTS = [
   {
     id: "portfolio",
     url: "https://diegocarrillo.com",
+    method: "ai",
   },
   {
     id: "cafedostazas",
     url: "https://cafedostazas.com",
+    method: "organic",
   },
   {
     id: "samanthazul",
     url: "https://www.samanthazul.com/", // Placeholder
+    method: "organic",
   },
   {
     id: "volcanicvillas",
     url: "https://www.arenalvolcanicvillas.com/", // Placeholder
+    method: "organic",
   },
 ];
 
@@ -139,6 +143,24 @@ export default function Projects() {
                         </a>
                       </Button>
                     </Box>
+
+                    {/* Method Badge */}
+                    <Badge
+                      position="absolute"
+                      top={4}
+                      right={4}
+                      bg={project.method === "ai" ? "purple.500" : "green.500"}
+                      color="white"
+                      variant="solid"
+                      fontSize="xs"
+                      px={2}
+                      py={1}
+                      borderRadius="md"
+                      zIndex={20}
+                      boxShadow="lg"
+                    >
+                      {t(`methods.${project.method}`)}
+                    </Badge>
                   </Box>
 
                   {/* Content */}
