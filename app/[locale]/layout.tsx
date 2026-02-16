@@ -6,6 +6,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import Navbar from "@/components/Navbar";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700"],
@@ -22,11 +23,16 @@ const doto = Doto({
 });
 
 export const metadata: Metadata = {
-  title: "Diego Carrillo | Software Developer Portfolio",
+  title: "Diego Carrillo | Cloud & Backend Developer Portfolio",
   description:
-    "Portfolio of Diego Carrillo Arroyo - Full Stack Software Developer specialized in Next.js, React, and Cloud Technologies based in Costa Rica.",
+    "Portfolio of Diego Carrillo Arroyo - Software Developer specialized in Backend Systems, Cloud Computing, and Scalable Infrastructure based in Costa Rica.",
   keywords: [
-    "Software Developer",
+    "Backend Developer",
+    "Cloud Computing",
+    "Azure",
+    "AWS",
+    "Microservices",
+    "Software Architecture",
     "Full Stack",
     "React",
     "Next.js",
@@ -34,8 +40,6 @@ export const metadata: Metadata = {
     "Portfolio",
     "Diego Carrillo",
     "Costa Rica",
-    "Web Development",
-    "Chakra UI",
   ],
   authors: [{ name: "Diego Carrillo Arroyo" }],
   creator: "Diego Carrillo Arroyo",
@@ -43,9 +47,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://diegocarrillo.com",
-    title: "Diego Carrillo | Software Developer Portfolio",
+    title: "Diego Carrillo | Cloud & Backend Developer Portfolio",
     description:
-      "Explore the portfolio of Diego Carrillo Arroyo, a Full Stack Developer from Costa Rica specializing in modern web technologies like Next.js and React.",
+      "Explore the portfolio of Diego Carrillo Arroyo, a Software Developer from Costa Rica specializing in Backend Systems, Cloud Computing, and Modern Web Technologies.",
     siteName: "Diego Carrillo Portfolio",
     images: [
       {
@@ -92,6 +96,7 @@ export default async function RootLayout({
           <Provider>
             <Navbar />
             {children}
+            <ScrollToTop />
           </Provider>
         </NextIntlClientProvider>
       </body>

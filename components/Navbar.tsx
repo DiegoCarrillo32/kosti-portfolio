@@ -74,7 +74,19 @@ export default function Navbar() {
     >
       <Container maxW="container.xl">
         <Flex justify="space-between" align="center">
-          <Link href="/">
+          <Link
+            href="/"
+            onClick={(e) => {
+              if (
+                window.location.pathname === "/" ||
+                window.location.pathname === "/es" ||
+                window.location.pathname === "/en"
+              ) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
+            }}
+          >
             <Box position="relative" w="50px" h="50px">
               <Image
                 src="/icon-512x512.png"
