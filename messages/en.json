@@ -1,0 +1,120 @@
+{
+  "Metadata": {
+    "title": "Diego Carrillo Portfolio",
+    "description": "Software Developer Portfolio"
+  },
+  "Navbar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "experience": "Experience",
+    "technologies": "Technologies",
+    "skills": "Soft Skills"
+  },
+  "Hero": {
+    "greeting": "Hi, I'm",
+    "name": "Diego Carrillo Arroyo",
+    "role": "Bachelor's Degree in Computer Engineering",
+    "location": "Costa Rica",
+    "downloadResume": "Download Resume",
+    "contact": "Contact Me",
+    "latestWork": "Latest Work"
+  },
+  "About": {
+    "title": "About Me",
+    "content": "I am a Software Developer with experience in full-stack development, cloud integration, and performance optimization. I am passionate about building scalable solutions and learning new technologies. I have a Bachelor's Degree in Computer Engineering from Tecnológico de Costa Rica."
+  },
+  "Projects": {
+    "title": "Projects",
+    "visit": "Visit Project",
+    "list": {
+      "portfolio": {
+        "title": "My Portfolio",
+        "description": "The site you are currently visiting! Built with Next.js 15, TypeScript, Chakra UI, and Framer Motion. Features internationalization and a custom AI-driven development workflow.",
+        "tech": ["Next.js", "TypeScript", "Chakra UI", "Framer Motion"]
+      },
+      "cafedostazas": {
+        "title": "Cafe Dos Tazas",
+        "description": "A modern landing page for a coffee brand. Features a product carousel, contact integration, and a clean, responsive design.",
+        "tech": ["React", "Vite", "Tailwind CSS"]
+      },
+      "samanthazul": {
+        "title": "Samantha Zul",
+        "description": "Portfolio website for Samantha Zul. showcasing her work and professional experience.",
+        "tech": ["Astro", "React"]
+      },
+      "volcanicvillas": {
+        "title": "Arenal Volcanic Villas",
+        "description": "Tourism website for Arenal Volcanic Villas, featuring accommodation details and booking information.",
+        "tech": ["React", "Tailwind CSS"]
+      }
+    }
+  },
+  "Experience": {
+    "title": "Experience",
+    "jobs": {
+      "konrad": {
+        "company": "Konrad Group",
+        "role": "Software Developer",
+        "date": "Jul 2024 – Present",
+        "description": [
+          "Enhanced performance of 6 critical endpoints, achieving 85–90% speed improvements.",
+          "Developed and maintained front-end and back-end features using React, Angular, Spring Boot, and Express.",
+          "Integrated Azure Cloud services to support scalable infrastructure.",
+          "Collaborated in code reviews and refinement sessions for improved business understanding and solution quality.",
+          "Participated in daily team meetings for alignment and coordination across development efforts.",
+          "Created and Managed CI/CD pipelines with GitHub."
+        ]
+      },
+      "plan21": {
+        "company": "Foundation Plan21",
+        "role": "Frontend Developer (Volunteer)",
+        "date": "Sep 2021 – Apr 2023",
+        "description": [
+          "Volunteered after IBM Call for Code 2022, gaining valuable insights into effective workflow management and advancing front-end development skills.",
+          "Collaborated with team members to understand, design, and implement new user-focused features."
+        ]
+      },
+      "nativo": {
+        "company": "Nativo",
+        "role": "Full Stack Developer Intern",
+        "date": "Nov 2021 – Feb 2022",
+        "description": [
+          "Contributed to a client-focused production web application using Ruby on Rails, AngularJS, and MongoDB.",
+          "Participated in daily meetings and agile workflows to support collaboration and project velocity.",
+          "Took part in peer code reviews, providing constructive feedback to uphold team coding standards."
+        ]
+      }
+    }
+  },
+  "Technologies": {
+    "title": "Technologies",
+    "languages": "Languages",
+    "frameworks": "Frameworks",
+    "tools": "Tools"
+  },
+  "Skills": {
+    "title": "Soft Skills",
+    "list": [
+      {
+        "title": "Team collaboration",
+        "description": "I thrive in diverse teams, believing that collective intelligence drives the best solutions. My experience at Konrad Group and Plan21 taught me the value of active listening and shared ownership."
+      },
+      {
+        "title": "Communication",
+        "description": "Clear and transparent communication is my standard. Whether explaining technical concepts to stakeholders or coordinating with designers, I ensure everyone is aligned."
+      },
+      {
+        "title": "Continuous learning",
+        "description": "Technology never stops evolving, and neither do I. I am constantly exploring new frameworks, patterns, and tools to stay at the forefront of development."
+      },
+      {
+        "title": "Adaptability",
+        "description": "In the fast-paced tech world, flexibility is key. I quickly adapt to new requirements, tools, and environments, ensuring I can contribute effectively from day one."
+      }
+    ]
+  },
+  "Footer": {
+    "rights": "All rights reserved."
+  }
+}

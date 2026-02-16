@@ -1,0 +1,120 @@
+{
+  "Metadata": {
+    "title": "Portafolio de Diego Carrillo",
+    "description": "Portafolio de Desarrollador de Software"
+  },
+  "Navbar": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "technologies": "Tecnologías",
+    "skills": "Habilidades Blandas"
+  },
+  "Hero": {
+    "greeting": "Hola, soy",
+    "name": "Diego Carrillo Arroyo",
+    "role": "Licenciado en Ingeniería en Computación",
+    "location": "Costa Rica",
+    "downloadResume": "Descargar Currículum",
+    "contact": "Contáctame",
+    "latestWork": "Últimos Trabajos"
+  },
+  "About": {
+    "title": "Sobre Mí",
+    "content": "Soy un Desarrollador de Software con experiencia en desarrollo full-stack, integración en la nube y optimización de rendimiento. Me apasiona construir soluciones escalables y aprender nuevas tecnologías. Tengo una Licenciatura en Ingeniería en Computación del Tecnológico de Costa Rica."
+  },
+  "Projects": {
+    "title": "Proyectos",
+    "visit": "Visitar Proyecto",
+    "list": {
+      "portfolio": {
+        "title": "Mi Portafolio",
+        "description": "¡El sitio que estás visitando! Construido con Next.js 15, TypeScript, Chakra UI y Framer Motion. Cuenta con internacionalización y un flujo de trabajo de desarrollo impulsado por IA.",
+        "tech": ["Next.js", "TypeScript", "Chakra UI", "Framer Motion"]
+      },
+      "cafedostazas": {
+        "title": "Café Dos Tazas",
+        "description": "Una landing page moderna para una marca de café. Cuenta con carrusel de productos, integración de contacto y un diseño limpio y responsivo.",
+        "tech": ["React", "Vite", "Tailwind CSS"]
+      },
+      "samanthazul": {
+        "title": "Samantha Zul",
+        "description": "Sitio web portafolio para Samantha Zul, mostrando su trabajo y experiencia profesional.",
+        "tech": ["Diseño Web", "UI Responsiva"]
+      },
+      "volcanicvillas": {
+        "title": "Arenal Volcanic Villas",
+        "description": "Sitio web turístico para Arenal Volcanic Villas, con detalles de alojamiento e información de reservas.",
+        "tech": ["Turismo", "Integración de Reservas"]
+      }
+    }
+  },
+  "Experience": {
+    "title": "Experiencia",
+    "jobs": {
+      "konrad": {
+        "company": "Konrad Group",
+        "role": "Desarrollador de Software",
+        "date": "Jul 2024 – Presente",
+        "description": [
+          "Mejoré el rendimiento de 6 endpoints críticos, logrando mejoras de velocidad del 85–90%.",
+          "Desarrollé y mantuve funcionalidades front-end y back-end usando React, Angular, Spring Boot y Express.",
+          "Integré servicios de Azure Cloud para soportar infraestructura escalable.",
+          "Colaboré en revisiones de código y sesiones de refinamiento para mejorar la comprensión del negocio y la calidad de la solución.",
+          "Participé en reuniones diarias del equipo para la alineación y coordinación en los esfuerzos de desarrollo.",
+          "Creé y gestioné pipelines de CI/CD con GitHub."
+        ]
+      },
+      "plan21": {
+        "company": "Foundation Plan21",
+        "role": "Desarrollador Frontend (Voluntario)",
+        "date": "Sep 2021 – Abr 2023",
+        "description": [
+          "Voluntariado después del IBM Call for Code 2022, ganando valiosos conocimientos en gestión efectiva de flujos de trabajo y avanzando en habilidades de desarrollo front-end.",
+          "Colaboré con miembros del equipo para entender, diseñar e implementar nuevas características centradas en el usuario."
+        ]
+      },
+      "nativo": {
+        "company": "Nativo",
+        "role": "Pasante de Desarrollador Full Stack",
+        "date": "Nov 2021 – Feb 2022",
+        "description": [
+          "Contribuí a una aplicación web de producción centrada en el cliente usando Ruby on Rails, AngularJS y MongoDB.",
+          "Participé en reuniones diarias y flujos de trabajo ágiles para apoyar la colaboración y la velocidad del proyecto.",
+          "Participé en revisiones de código entre pares, proporcionando retroalimentación constructiva para mantener los estándares de codificación del equipo."
+        ]
+      }
+    }
+  },
+  "Technologies": {
+    "title": "Tecnologías",
+    "languages": "Lenguajes",
+    "frameworks": "Frameworks",
+    "tools": "Herramientas"
+  },
+  "Skills": {
+    "title": "Habilidades Blandas",
+    "list": [
+      {
+        "title": "Colaboración en equipo",
+        "description": "Prospero en equipos diversos, creyendo que la inteligencia colectiva impulsa las mejores soluciones. Mi experiencia en Konrad Group y Plan21 me enseñó el valor de la escucha activa y la propiedad compartida."
+      },
+      {
+        "title": "Comunicación",
+        "description": "La comunicación clara y transparente es mi estándar. Ya sea explicando conceptos técnicos a los interesados o coordinando con diseñadores, aseguro que todos estén alineados."
+      },
+      {
+        "title": "Aprendizaje continuo",
+        "description": "La tecnología nunca deja de evolucionar, y yo tampoco. Constantemente exploro nuevos frameworks, patrones y herramientas para mantenerme a la vanguardia del desarrollo."
+      },
+      {
+        "title": "Adaptabilidad",
+        "description": "En el rápido mundo tecnológico, la flexibilidad es clave. Me adapto rápidamente a nuevos requisitos, herramientas y entornos, asegurando que pueda contribuir eficazmente desde el primer día."
+      }
+    ]
+  },
+  "Footer": {
+    "rights": "Todos los derechos reservados."
+  }
+}
