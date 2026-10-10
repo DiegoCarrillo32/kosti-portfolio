@@ -31,10 +31,34 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 import { FaJava, FaMicrosoft } from "react-icons/fa";
-import Section from "@/components/ui/Section";
+import Section from "./Section";
 import { Layers } from "lucide-react";
 import { motion, useAnimation } from "framer-motion";
 import React, { useEffect, useRef } from "react";
+import { TECHNOLOGIES } from "@/content/cv";
+
+const TECH_ICONS: Record<string, React.ElementType> = {
+  Java: FaJava,
+  Kotlin: SiKotlin,
+  JavaScript: SiJavascript,
+  TypeScript: SiTypescript,
+  Python: SiPython,
+  HTML5: SiHtml5,
+  CSS3: SiCss3,
+  SQL: SiMysql,
+  React: SiReact,
+  Angular: SiAngular,
+  "Spring Boot": SiSpringboot,
+  Express: SiExpress,
+  Android: SiAndroid,
+  Compose: SiJetpackcompose,
+  Git: SiGit,
+  MongoDB: SiMongodb,
+  "Azure (Microsoft)": FaMicrosoft,
+  Docker: SiDocker,
+  GraphQL: SiGraphql,
+  Tailwind: SiTailwindcss,
+};
 
 const Marquee = ({
   children,
@@ -90,34 +114,6 @@ const Marquee = ({
 export default function Technologies() {
   const t = useTranslations("Technologies");
 
-  const techs = {
-    languages: [
-      { name: "Java", icon: FaJava },
-      { name: "Kotlin", icon: SiKotlin },
-      { name: "JavaScript", icon: SiJavascript },
-      { name: "TypeScript", icon: SiTypescript },
-      { name: "Python", icon: SiPython },
-      { name: "HTML5", icon: SiHtml5 },
-      { name: "CSS3", icon: SiCss3 },
-      { name: "SQL", icon: SiMysql },
-    ],
-    frameworks: [
-      { name: "React", icon: SiReact },
-      { name: "Angular", icon: SiAngular },
-      { name: "Spring Boot", icon: SiSpringboot },
-      { name: "Express", icon: SiExpress },
-      { name: "Android", icon: SiAndroid },
-      { name: "Compose", icon: SiJetpackcompose },
-    ],
-    tools: [
-      { name: "Git", icon: SiGit },
-      { name: "MongoDB", icon: SiMongodb },
-      { name: "Azure (Microsoft)", icon: FaMicrosoft },
-      { name: "Docker", icon: SiDocker },
-      { name: "GraphQL", icon: SiGraphql },
-      { name: "Tailwind", icon: SiTailwindcss },
-    ],
-  };
 
   const TechCard = ({
     name,
@@ -205,8 +201,8 @@ export default function Technologies() {
                 {t("languages")}
               </Heading>
               <Marquee direction={-1} speed={50}>
-                {techs.languages.map((tech) => (
-                  <TechCard key={tech.name} name={tech.name} icon={tech.icon} />
+                {TECHNOLOGIES.languages.map((name) => (
+                  <TechCard key={name} name={name} icon={TECH_ICONS[name]} />
                 ))}
               </Marquee>
             </Box>
@@ -224,8 +220,8 @@ export default function Technologies() {
                 {t("frameworks")}
               </Heading>
               <Marquee direction={1} speed={60}>
-                {techs.frameworks.map((tech) => (
-                  <TechCard key={tech.name} name={tech.name} icon={tech.icon} />
+                {TECHNOLOGIES.frameworks.map((name) => (
+                  <TechCard key={name} name={name} icon={TECH_ICONS[name]} />
                 ))}
               </Marquee>
             </Box>
@@ -243,8 +239,8 @@ export default function Technologies() {
                 {t("tools")}
               </Heading>
               <Marquee direction={-1} speed={70}>
-                {techs.tools.map((tech) => (
-                  <TechCard key={tech.name} name={tech.name} icon={tech.icon} />
+                {TECHNOLOGIES.tools.map((name) => (
+                  <TechCard key={name} name={name} icon={TECH_ICONS[name]} />
                 ))}
               </Marquee>
             </Box>

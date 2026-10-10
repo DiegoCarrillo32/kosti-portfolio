@@ -2,7 +2,7 @@
 
 import { Box, Container, Heading, Text } from "@chakra-ui/react";
 import { useTranslations } from "next-intl";
-import Section from "@/components/ui/Section";
+import Section from "./Section";
 
 export default function About() {
   const t = useTranslations("About");

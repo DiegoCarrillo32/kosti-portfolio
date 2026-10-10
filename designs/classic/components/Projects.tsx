@@ -16,33 +16,11 @@ import {
 } from "@chakra-ui/react";
 import { useTranslations } from "next-intl";
 import { ExternalLink } from "lucide-react";
-import Section from "./ui/Section";
+import Section from "./Section";
 import { motion } from "framer-motion";
+import { PROJECTS } from "@/content/cv";
 
 const MotionLinkBox = motion(LinkBox);
-
-const PROJECTS = [
-  {
-    id: "portfolio",
-    url: "https://diegocarrillo.com",
-    method: "ai",
-  },
-  {
-    id: "cafedostazas",
-    url: "https://cafedostazas.com",
-    method: "organic",
-  },
-  {
-    id: "samanthazul",
-    url: "https://www.samanthazul.com/", // Placeholder
-    method: "organic",
-  },
-  {
-    id: "volcanicvillas",
-    url: "https://www.arenalvolcanicvillas.com/", // Placeholder
-    method: "organic",
-  },
-];
 
 export default function Projects() {
   const t = useTranslations("Projects");

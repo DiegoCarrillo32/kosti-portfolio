@@ -2,31 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ebf4f6;
-  --foreground: #09637e;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
-/* Font Application */
-body {
-  font-family: var(--font-roboto) !important;
+/* Classic design. Every design scopes its globals under [data-design="<id>"]. */
+[data-design="classic"] {
+  --background: #ebf4f6;
+  --foreground: #09637e;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+[data-design="classic"] body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
+}
+
+[data-design="classic"] :is(h1, h2, h3, h4, h5, h6) {
   font-family: var(--font-doto) !important;
 }

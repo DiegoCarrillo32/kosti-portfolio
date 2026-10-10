@@ -1,0 +1,359 @@
+/* Crab Crew CV layout. Components come from vendor/bundle.css; this file only lays out
+   the page, using the tokens in vendor/tokens.css. Prefix cv-. */
+
+[data-design="crab-crew"] {
+  background: var(--sand);
+  color-scheme: light;
+
+  &.dark {
+    color-scheme: dark;
+  }
+
+  & body {
+    background: var(--sand);
+  }
+
+  .cv-root {
+    min-height: 100vh;
+    background: var(--sand);
+    color: var(--ink);
+    font-family: var(--font-mono);
+    font-size: 14px;
+    line-height: 22px;
+    overflow-x: clip;
+  }
+
+  .cv-root :is(h1, h2, h3, p, ul) {
+    margin: 0;
+  }
+
+  .cv-root a {
+    color: inherit;
+  }
+
+  .cv-wrap {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 var(--space-4);
+    box-sizing: border-box;
+  }
+
+  .cv-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .cv-skip:focus {
+    position: fixed;
+    top: var(--space-2);
+    left: var(--space-2);
+    z-index: 200;
+    width: auto;
+    height: auto;
+    clip: auto;
+    padding: var(--space-2) var(--space-3);
+    background: var(--sand-raised);
+    border: var(--border-1) solid var(--focus);
+  }
+
+  /* ---- nav */
+  .cv-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--sand);
+    border-bottom: var(--border-1) solid var(--line);
+  }
+
+  .cv-nav-bar {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    min-height: 56px;
+  }
+
+  .cv-brand {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    text-decoration: none;
+    min-width: 0;
+  }
+
+  .cv-brand .cc-crab {
+    width: 48px;
+    height: 30px;
+  }
+
+  .cv-brand-name {
+    font-family: var(--font-pixel);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    white-space: nowrap;
+  }
+
+  .cv-nav-links {
+    display: flex;
+    gap: var(--space-1);
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-bottom: var(--space-2);
+  }
+
+  .cv-nav-links a {
+    text-decoration: none;
+  }
+
+  .cv-controls {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+    margin-left: auto;
+  }
+
+  .cv-select {
+    height: 28px;
+    padding: 0 var(--space-2);
+    font-family: var(--font-label);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  /* ---- sections */
+  .cv-main {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-12);
+  }
+
+  .cv-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    scroll-margin-top: 112px;
+  }
+
+  .cv-title {
+    font-family: var(--font-pixel);
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 600;
+  }
+
+  .cv-text {
+    max-width: 72ch;
+  }
+
+  .cv-lift {
+    filter: drop-shadow(var(--shadow-step));
+  }
+
+  /* ---- hero */
+  .cv-hero {
+    gap: var(--space-4);
+    padding-top: var(--space-6);
+  }
+
+  .cv-display {
+    font-family: var(--font-pixel);
+    font-size: 48px;
+    line-height: 52px;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+  }
+
+  .cv-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+
+  .cv-actions .cc-btn {
+    text-decoration: none;
+  }
+
+  .cv-hero .cc-say-bubble {
+    max-width: 52ch;
+  }
+
+  /* ---- experience */
+  .cv-job {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .cv-job .cc-card-desc {
+    white-space: normal;
+  }
+
+  .cv-job .cc-card-top {
+    flex-wrap: wrap;
+    row-gap: 0;
+  }
+
+  .cv-job .cc-row {
+    padding: 0;
+  }
+
+  .cv-bullets {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    padding: 0;
+    list-style: none;
+  }
+
+  .cv-bullets li {
+    display: flex;
+    gap: var(--space-2);
+  }
+
+  .cv-bullets li::before {
+    content: "";
+    flex: none;
+    width: 6px;
+    height: 6px;
+    margin-top: 8px;
+    background: var(--cc-edge, var(--ink-muted));
+  }
+
+  /* ---- grids */
+  .cv-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+
+  @media (min-width: 720px) {
+    .cv-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .cv-grid > .cv-lift {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cv-tile {
+    flex: 1 1 auto;
+    gap: var(--space-2);
+  }
+
+  .cv-tile-head {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    min-width: 0;
+  }
+
+  .cv-tile-head .cc-crab {
+    width: 48px;
+    height: 30px;
+  }
+
+  .cv-tile-name {
+    font-family: var(--font-pixel);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    min-width: 0;
+  }
+
+  .cv-tile-text {
+    flex: 1 1 auto;
+  }
+
+  .cv-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+  }
+
+  .cv-tile-foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+
+  .cv-tile-foot .cc-btn {
+    text-decoration: none;
+  }
+
+  /* ---- footer */
+  .cv-footer {
+    border-top: var(--border-1) dashed var(--ground);
+    padding-bottom: var(--space-8);
+  }
+
+  .cv-footer .cc-empty {
+    padding-left: 0;
+    padding-right: 0;
+    flex-wrap: wrap;
+  }
+
+  .cv-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+
+  .cv-links a {
+    text-decoration: none;
+  }
+
+  /* ---- scroll to top */
+  .cv-top {
+    position: fixed;
+    right: var(--space-4);
+    bottom: var(--space-4);
+    z-index: 90;
+    filter: drop-shadow(var(--shadow-lift));
+  }
+
+  @media (max-width: 560px) {
+    .cv-display {
+      font-size: 36px;
+      line-height: 40px;
+    }
+
+    .cv-brand-name {
+      display: none;
+    }
+
+    .cv-hero .cc-say {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .cv-hero .cc-say-wrap {
+      margin-bottom: 0;
+    }
+
+    .cv-hero .cc-say-wrap::after {
+      display: none;
+    }
+
+    .cv-job .cc-card {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .cv-job .cc-card-lane {
+      align-self: flex-start;
+    }
+  }
+}

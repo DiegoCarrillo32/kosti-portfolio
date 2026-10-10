@@ -11,6 +11,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import LanguageSwitcher from "./LanguageSwitcher";
+import DesignSwitcher from "./DesignSwitcher";
 
 import { useTheme } from "next-themes";
 import { Moon, Sun } from "lucide-react";
@@ -113,6 +114,7 @@ export default function Navbar() {
               </ChakraLink>
             ))}
             <HStack gap={2}>
+              <DesignSwitcher />
               <ColorModeToggle />
               <LanguageSwitcher />
             </HStack>
@@ -121,6 +123,7 @@ export default function Navbar() {
           <Box display={{ base: "block", md: "none" }}>
             {/* Mobile Menu implementation simplified for now */}
             <HStack gap={2}>
+              <DesignSwitcher />
               <ColorModeToggle />
               <LanguageSwitcher />
             </HStack>

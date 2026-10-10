@@ -10,12 +10,12 @@ import {
   Badge,
 } from "@chakra-ui/react";
 import { useTranslations } from "next-intl";
-import Section from "@/components/ui/Section";
+import Section from "./Section";
 import { Briefcase } from "lucide-react";
+import { JOB_KEYS } from "@/content/cv";
 
 export default function Experience() {
   const t = useTranslations("Experience");
-  const jobKeys = ["konrad", "plan21", "nativo"] as const;
 
   return (
     <Box
@@ -61,7 +61,7 @@ export default function Experience() {
               zIndex={0}
             />
 
-            {jobKeys.map((key, index) => (
+            {JOB_KEYS.map((key, index) => (
               <Section
                 key={key}
                 delay={index * 0.2}

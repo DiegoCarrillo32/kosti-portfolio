@@ -10,7 +10,7 @@ import {
   Flex,
 } from "@chakra-ui/react";
 import { useTranslations } from "next-intl";
-import Section from "@/components/ui/Section";
+import Section from "./Section";
 import { Sparkles } from "lucide-react";
 
 export default function SoftSkills() {

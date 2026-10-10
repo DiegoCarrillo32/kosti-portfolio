@@ -5,8 +5,9 @@ import { Provider } from "@/components/ui/provider";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
-import Navbar from "@/components/Navbar";
-import ScrollToTop from "@/components/ScrollToTop";
+import { cookies } from "next/headers";
+import { DesignProvider } from "@/designs/DesignProvider";
+import { DEFAULT_DESIGN, DESIGN_COOKIE, isDesignId } from "@/designs/ids";
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700"],
@@ -89,14 +90,15 @@ export default async function RootLayout({
 
   const messages = await getMessages();
 
+  const savedDesign = (await cookies()).get(DESIGN_COOKIE)?.value;
+  const design = isDesignId(savedDesign) ? savedDesign : DEFAULT_DESIGN;
+
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale} data-design={design} suppressHydrationWarning>
       <body className={`${roboto.variable} ${doto.variable} antialiased`}>
         <NextIntlClientProvider messages={messages}>
           <Provider>
-            <Navbar />
-            {children}
-            <ScrollToTop />
+            <DesignProvider initialDesign={design}>{children}</DesignProvider>
           </Provider>
         </NextIntlClientProvider>
       </body>

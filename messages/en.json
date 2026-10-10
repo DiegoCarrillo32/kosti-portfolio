@@ -35,22 +35,38 @@
       "portfolio": {
         "title": "My Portfolio",
         "description": "The site you are currently visiting! Built with Next.js 15, TypeScript, Chakra UI, and Framer Motion. Features internationalization and a custom AI-driven development workflow.",
-        "tech": ["Next.js", "TypeScript", "Chakra UI", "Framer Motion"]
+        "tech": [
+          "Next.js",
+          "TypeScript",
+          "Chakra UI",
+          "Framer Motion"
+        ]
       },
       "cafedostazas": {
         "title": "Cafe Dos Tazas",
         "description": "A modern landing page for a coffee brand. Features a product carousel, contact integration, and a clean, responsive design.",
-        "tech": ["Next.js", "Vite", "Tailwind CSS", "Sanity CRM"]
+        "tech": [
+          "Next.js",
+          "Vite",
+          "Tailwind CSS",
+          "Sanity CRM"
+        ]
       },
       "samanthazul": {
         "title": "Samantha Zul",
         "description": "Portfolio website for Samantha Zul. showcasing her work and professional experience.",
-        "tech": ["Astro", "React"]
+        "tech": [
+          "Astro",
+          "React"
+        ]
       },
       "volcanicvillas": {
         "title": "Arenal Volcanic Villas",
         "description": "Tourism website for Arenal Volcanic Villas, featuring accommodation details and booking information.",
-        "tech": ["React", "Tailwind CSS"]
+        "tech": [
+          "React",
+          "Tailwind CSS"
+        ]
       }
     }
   },
@@ -120,5 +136,27 @@
   },
   "Footer": {
     "rights": "All rights reserved."
+  },
+  "Designs": {
+    "label": "CV style",
+    "classic": "Classic",
+    "crab-crew": "Crab Crew"
+  },
+  "CrabCrew": {
+    "commits": "{count} commits this week",
+    "contact": "Contact",
+    "resume": "Resume",
+    "running": "Running",
+    "done": "Done",
+    "visit": "Visit",
+    "day": "Day",
+    "night": "Night",
+    "theme": "Switch to {mode}",
+    "language": "Switch language",
+    "top": "Back to top",
+    "endTitle": "That's the whole crew.",
+    "endText": "Every job, project and skill above has a crab of its own. Want to add one to your beach? Send a message.",
+    "credit": "Built on the Crab Crew design system",
+    "skip": "Skip to content"
   }
 }

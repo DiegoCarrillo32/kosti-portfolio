@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Vendored from the Crab Crew design system.
+    "designs/crab-crew/vendor/**",
   ]),
 ]);
 

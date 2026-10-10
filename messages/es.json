@@ -35,22 +35,37 @@
       "portfolio": {
         "title": "Mi Portafolio",
         "description": "¡El sitio que estás visitando! Construido con Next.js 15, TypeScript, Chakra UI y Framer Motion. Cuenta con internacionalización y un flujo de trabajo de desarrollo impulsado por IA.",
-        "tech": ["Next.js", "TypeScript", "Chakra UI", "Framer Motion"]
+        "tech": [
+          "Next.js",
+          "TypeScript",
+          "Chakra UI",
+          "Framer Motion"
+        ]
       },
       "cafedostazas": {
         "title": "Café Dos Tazas",
         "description": "Una landing page moderna para una marca de café. Cuenta con carrusel de productos, integración de contacto y un diseño limpio y responsivo.",
-        "tech": ["Next.js", "Vite", "Tailwind CSS"]
+        "tech": [
+          "Next.js",
+          "Vite",
+          "Tailwind CSS"
+        ]
       },
       "samanthazul": {
         "title": "Samantha Zul",
         "description": "Sitio web portafolio para Samantha Zul, mostrando su trabajo y experiencia profesional.",
-        "tech": ["Astro", "React"]
+        "tech": [
+          "Astro",
+          "React"
+        ]
       },
       "volcanicvillas": {
         "title": "Arenal Volcanic Villas",
         "description": "Sitio web turístico para Arenal Volcanic Villas, con detalles de alojamiento e información de reservas.",
-        "tech": ["React", "Tailwind CSS"]
+        "tech": [
+          "React",
+          "Tailwind CSS"
+        ]
       }
     }
   },
@@ -120,5 +135,27 @@
   },
   "Footer": {
     "rights": "Todos los derechos reservados."
+  },
+  "Designs": {
+    "label": "Estilo del CV",
+    "classic": "Clásico",
+    "crab-crew": "Crab Crew"
+  },
+  "CrabCrew": {
+    "commits": "{count} commits esta semana",
+    "contact": "Contacto",
+    "resume": "Currículum",
+    "running": "En curso",
+    "done": "Terminado",
+    "visit": "Visitar",
+    "day": "Día",
+    "night": "Noche",
+    "theme": "Cambiar a {mode}",
+    "language": "Cambiar idioma",
+    "top": "Volver arriba",
+    "endTitle": "Esa es toda la tripulación.",
+    "endText": "Cada trabajo, proyecto y habilidad de arriba tiene su propio cangrejo. ¿Quieres sumar uno a tu playa? Escríbeme.",
+    "credit": "Hecho con el sistema de diseño Crab Crew",
+    "skip": "Saltar al contenido"
   }
 }
