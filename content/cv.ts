@@ -11,7 +11,20 @@ export const CONTACT = {
 
 export type ProjectMethod = "ai" | "organic";
 
-export const PROJECTS: { id: string; url: string; method: ProjectMethod }[] = [
+export const PROJECTS: {
+  id: string;
+  url: string;
+  method: ProjectMethod;
+  /** Shown instead of a live iframe, for sites that refuse to be framed (like GitHub). */
+  preview?: string;
+}[] = [
+  {
+    id: "claudeplugins",
+    url: "https://github.com/DiegoCarrillo32/claude-plugins",
+    method: "ai",
+    preview:
+      "https://raw.githubusercontent.com/DiegoCarrillo32/claude-plugins/main/docs/clawds/crew.png",
+  },
   {
     id: "portfolio",
     url: "https://diegocarrillo.com",

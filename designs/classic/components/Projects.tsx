@@ -13,6 +13,7 @@ import {
   Icon,
   LinkBox,
   LinkOverlay,
+  Image,
 } from "@chakra-ui/react";
 import { useTranslations } from "next-intl";
 import { ExternalLink } from "lucide-react";
@@ -71,27 +72,40 @@ export default function Projects() {
                     _dark={{ borderColor: "whiteAlpha.100", bg: "gray.800" }}
                     data-group
                   >
-                    {/* IFrame Scaled Container */}
-                    <Box
-                      w="400%" // 4x width to scale down by 0.25
-                      h="400%" // 4x height
-                      style={{
-                        transform: "scale(0.25)",
-                        transformOrigin: "0 0",
-                      }}
-                    >
-                      <iframe
-                        src={project.url}
-                        title={`Preview of ${project.id}`}
-                        style={{
-                          width: "100%",
-                          height: "100%",
-                          border: "none",
-                          pointerEvents: "none", // Disable interaction within iframe
-                        }}
+                    {project.preview ? (
+                      <Image
+                        src={project.preview}
+                        alt={`Preview of ${project.id}`}
+                        w="100%"
+                        h="100%"
+                        objectFit="contain"
+                        p={6}
+                        style={{ imageRendering: "pixelated" }}
                         loading="lazy"
                       />
-                    </Box>
+                    ) : (
+                      // IFrame Scaled Container
+                      <Box
+                        w="400%" // 4x width to scale down by 0.25
+                        h="400%" // 4x height
+                        style={{
+                          transform: "scale(0.25)",
+                          transformOrigin: "0 0",
+                        }}
+                      >
+                        <iframe
+                          src={project.url}
+                          title={`Preview of ${project.id}`}
+                          style={{
+                            width: "100%",
+                            height: "100%",
+                            border: "none",
+                            pointerEvents: "none", // Disable interaction within iframe
+                          }}
+                          loading="lazy"
+                        />
+                      </Box>
+                    )}
 
                     {/* Overlay on Hover */}
                     <Box

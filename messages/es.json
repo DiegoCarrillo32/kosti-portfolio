@@ -32,6 +32,16 @@
       "organic": "Orgánico"
     },
     "list": {
+      "claudeplugins": {
+        "title": "Claude Plugins",
+        "description": "Mis plugins para Claude Code: crab-crew, un mod que muestra cada subagente como su propio cangrejo animado en pixel art con once disfraces, y el sistema de diseño Crab Crew, el estilo detrás del CV Crab Crew de este sitio.",
+        "tech": [
+          "Claude Code",
+          "TypeScript",
+          "React",
+          "CSS"
+        ]
+      },
       "portfolio": {
         "title": "Mi Portafolio",
         "description": "¡El sitio que estás visitando! Construido con Next.js 15, TypeScript, Chakra UI y Framer Motion. Cuenta con internacionalización y un flujo de trabajo de desarrollo impulsado por IA.",
